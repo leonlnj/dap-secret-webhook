@@ -71,7 +71,7 @@ func initMLPClient(mlpApiHost string) client.MLPClient {
 		log.Infof("Google default credential not found. Fallback to HTTP default client")
 	}
 	cfg := mlp.NewConfiguration()
-	cfg.BasePath = mlpApiHost
+	cfg.BasePath = "mlpApiHost"
 	cfg.HTTPClient = httpClient
 
 	return &client.APIClient{

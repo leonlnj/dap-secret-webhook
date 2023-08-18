@@ -137,13 +137,13 @@ jobs:
             --header 'Content-Type: application/json' \
             --request POST \
             --data '{"name": "testgroup","team": "myteam","stream": "mystream"}' \
-            ${MLP_API_HOST}/v1/projects
+            ${MLP_API_HOST}/api/v1/projects
 
           curl -v \
             --header 'Content-Type: application/json' \
             --request POST \
             --data '{"Name": "testsecretkey","Data": "testsecretdata"}' \
-            ${MLP_API_HOST}/v1/projects/1/secrets
+            ${MLP_API_HOST}/api/v1/projects/1/secrets
 
       - name: Setup Webhook
         id: setup

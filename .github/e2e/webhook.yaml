@@ -38,7 +38,9 @@ spec:
           imagePullPolicy: Always
           env:
           - name: MLP_API_HOST
-            value: http://mlp.default.svc.cluster.local:8080
+            value: http://mlp.default.svc.cluster.local:8080/api
+
+
           - name: TLS_SERVER_CERT_FILE
             value: /etc/tls-certs/serverCert.pem
           - name: TLS_SERVER_KEY_FILE
